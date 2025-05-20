@@ -1,0 +1,52 @@
+// $primary-color: #38a169; // Green color
+// $hover-color: #68d391; // Lighter green for hover effect
+// $font-family: "Arial", sans-serif;
+.banner {
+  background: url("https://actual.ngmk.uz/uploads/photo/newsandevents/00002111.jpg")
+    no-repeat center center/cover;
+  color: white;
+  // width: 100%;
+  height: 60vh;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  animation: fadeIn 0.6s ease-in;
+  margin-top: 100px;
+}
+.banner-content {
+  background-color: rgba(255, 255, 255, 0.801);
+  color: $primary-color;
+
+  padding: 30px;
+}
+.banner-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  @media screen and (max-width:500px){
+    font-size: 32px;
+  }
+}
+
+.banner-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.banner-button {
+  background-color: #ffffff;
+  color: $primary-color;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.banner-button:hover {
+  background-color: #f0f0f0;
+}

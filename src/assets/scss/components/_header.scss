@@ -1,0 +1,92 @@
+// Global styles
+// $primary-color: #38a169; // Green color
+// $hover-color: #68d391; // Lighter green for hover effect
+// $font-family: "Arial", sans-serif;
+
+// Header styles
+.wrapper {
+  background-color: $primary-color;
+  // color:;
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+}
+.header {
+  position: rela;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // padding: 16px 32px;
+  font-family: $font-family;
+  z-index: 10;
+  animation: fadeIn 0.6s ease-in;
+
+  // position: absolute;
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  &__pages {
+    display: flex;
+    gap: 24px;
+    @media screen and (max-width: 1020px) {
+      display: none;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    padding: 7px;
+
+    border-radius: 5px;
+    &:hover {
+      background-color: white;
+
+      color: $hover-color;
+    }
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @media screen and (max-width: 500px) {
+      gap: 8px;
+    }
+  }
+  &__language {
+    border: none;
+    background-color: $primary-color;
+    color: white;
+    font-size: 20px;
+    width: 60px;
+    @media screen and (max-width: 500px) {
+      // width:px;
+      font-size: 17px;
+    }
+  }
+  &__outlined {
+    display: none;
+    @media screen and (max-width: 1020px) {
+      display: block;
+    }
+    @media screen and (max-width: 500px) {
+      width: 20px;
+      font-size: 10px;
+    }
+  }
+  &__switch {
+    @media screen and (max-width: 500px) {
+      // width: 20px;
+      font-size: 10px;
+    }
+  }
+  &__menu {
+    position: absolute;
+    display: flex;
+  }
+}

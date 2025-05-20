@@ -1,0 +1,78 @@
+// src/components/Sidebar.scss
+.sidebar {
+  position: fixed;
+  top: 67px; // menyu pastroqdan chiqadi
+  right: 0;
+  height: calc(100% - 60px);
+  width: 0;
+  background-color: $primary-color;
+  overflow-x: hidden;
+  transition: width 0.4s ease;
+  padding-top: 40px;
+  // padding: 40px 20px;
+  z-index: 1000;
+
+  a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    @media screen and (max-width: 500px) {
+      // width: 20px;
+      font-size: 15px;
+    }
+  }
+
+  &.open {
+    width: 250px;
+  }
+}
+
+.openbtn {
+  font-size: 20px;
+  @media screen and (max-width: 500px) {
+    // width: 20px;
+    font-size: 15px;
+  }
+
+  cursor: pointer;
+
+  color: white;
+  border: none;
+
+  // &:hover {
+  //   background-color: #444;
+  // }
+
+  &.hidden {
+    display: none;
+  }
+}
+.header__menu-left {
+  position: fixed;
+  top: 74px; // menyu pastroqdan chiqadi
+
+  height: calc(100% - 100px);
+  width: 100%;
+  right: 0;
+  background-color: #33333371;
+  overflow-x: hidden;
+  transition: width 0.4s ease;
+  padding-top: 40px;
+  z-index: 1000;
+}

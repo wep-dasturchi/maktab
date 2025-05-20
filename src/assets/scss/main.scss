@@ -1,0 +1,21 @@
+@import "./section/varibilis";
+@import "./section/normalizi";
+@import "./components/header";
+@import "./components/banner";
+
+@import "./components/menu";
+@import "./components/search";
+@import "./components/aboutSchool";
+@import "./components/courses";
+@import "./components/news";
+@import "./components/teachers";
+@import "./components/galerya";
+@import "components/footer";
+
+// PAGE
+@import "./components/page/home";
+@import"./components/page/aboutPage";
+@import"./components/page/lessonsPage";
+@import"./components/page/newsPage";
+@import"./components/page/photePage";
+@import"./components/page/connectionPage";
