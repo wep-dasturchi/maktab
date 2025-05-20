@@ -94,7 +94,7 @@ const AboutExtended = () => {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/ZjS6jvd5YHo"
+              src=""
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

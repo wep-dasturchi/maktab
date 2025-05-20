@@ -16,7 +16,7 @@ function HomePage() {
         <HeaderBanner />
         <div className="container">
           <div className="home__card">
-            {" "}
+       
             <AboutSchool />
             <News />
           </div>
